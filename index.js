@@ -5,18 +5,18 @@ function randomColor() {
   return Math.floor(Math.random() * 256);
 }
 
-function setup() {
-  createCanvas(windowWidth, windowHeight);
-}
-
 function zeroOrOne() {
   return Math.floor(Math.random() * 2);
+}
+
+function setup() {
+  createCanvas(windowWidth, windowHeight);
 }
 
 function draw() {
   background(colorBackground);
   stroke(randomColor(), randomColor(), randomColor());
-  strokeWeight(3);
+  strokeWeight(4);
   for (y = 0; y <= windowHeight; y += gridGap) {
     for (x = zeroOrOne() * gridGap; x <= windowWidth; x += gridGap) {
       line(x, y, x + gridGap, y);
