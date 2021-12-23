@@ -17,13 +17,7 @@ const lineWeight = 4;
 //
 const backgroundColor = "#161a1d";
 
-function randomColor() {
-  return Math.floor(Math.random() * 256);
-}
-
-function zeroOrOne() {
-  return Math.floor(Math.random() * 2);
-}
+const zeroOrOne = [0, 1];
 
 function setup() {
   createCanvas(windowWidth * 0.999, windowHeight * 0.999);
@@ -31,16 +25,16 @@ function setup() {
 
 function draw() {
   background(backgroundColor);
-  stroke(randomColor(), randomColor(), randomColor());
+  stroke(random(50, 256), random(50, 256), random(50, 256));
   strokeWeight(lineWeight);
   for (y = 0; y <= windowHeight; y += gap) {
-    for (x = zeroOrOne() * gap; x <= windowWidth; x += gap) {
+    for (x = random(zeroOrOne) * gap; x <= windowWidth; x += gap) {
       line(x, y, x + gap, y);
       x += gap;
     }
   }
   for (x = 0; x <= windowWidth; x += gap) {
-    for (y = zeroOrOne() * gap; y <= windowHeight; y += gap) {
+    for (y = random(zeroOrOne) * gap; y <= windowHeight; y += gap) {
       line(x, y, x, y + gap);
       y += gap;
     }
