@@ -17,11 +17,10 @@ const lineWeight = 4;
 //
 
 function setup() {
-  createCanvas(windowWidth * 0.999, windowHeight * 0.999);
+  createCanvas(windowWidth, windowHeight);
 }
 
 function draw() {
-  background("#161a1d");
   stroke(random(50, 256), random(50, 256), random(50, 256));
   strokeWeight(lineWeight);
   for (y = 0; y <= height; y += gap) {

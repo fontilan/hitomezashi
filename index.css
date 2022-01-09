@@ -1,14 +1,8 @@
 html,
 body {
-  height: 100%;
-}
-
-body {
-  background-color: #161a1d;
   margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 100%;
+  background-color: #161a1d;
 }
 
 canvas {
