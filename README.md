@@ -2,4 +2,6 @@
 
 https://fontilan.github.io/hitomezashi/
 
-A simple Hitomezashi pattern generator
+A simple Hitomezashi patterns generator.
+
+Refresh the page for a new pattern.
