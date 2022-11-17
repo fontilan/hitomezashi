@@ -1,20 +1,10 @@
-const gap = 20;
-// TO RANDOMIZE THE GAP (DENSITY) A LITTLE BIT USE THE LINES BELOW:
-//
-// const gap = randomGap();
-// function randomGap() {
-//   return Math.floor(Math.random() * 10 + 15);
-// }
-//
-const lineWeight = 4;
-//
-// TO RANDOMIZE THE LINE WEIGHT A LITTLE BIT USE THE LINES BELOW:
-//
-// const lineWeight = randomWeight();
-// function randomWeight() {
-//   return Math.floor(Math.random() * 3 + 3);
-// }
-//
+// const gap = 20;
+// 20 looks good IMO, but for some randomness use (and tinker with)
+const gap = Math.floor(Math.random() * 10 + 15);
+
+// const lineWeight = 4;
+// 4 looks good IMO, but for some randomness use (and tinker with)
+const lineWeight = Math.floor(Math.random() * 3 + 3);
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
